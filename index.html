@@ -1,10 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ishara Jasiri - Homepage</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background: linear-gradient(to left, deepskyblue, deeppink);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar h1 {
+            font-size: 36px;
+            color: plum;
+            font-family: 'Andale Mono', monospace;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: darkviolet;
+            font-family: 'Andale Mono', monospace;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: yellow;
+        }
+		
+        .welcome-message {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .welcome-message .greeting {
+            color: darkviolet;
+            font-weight: bold;
+            font-size: 24px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .welcome-message .intro {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            font-family: Verdana, sans-serif;
+        }
+    </style>
+</head>
 <body>
-
-
-<h1>Hello!</h1>
-<h1>I like dogs</h1>
+    <div class="navbar">
+        <h1><em>Ishara Jasiri</em></h1>
+        <ul>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+        </ul>
+    </div>
+	<div class="welcome-message">
+        <p class="greeting">Hi!</p>
+        <p class="intro">I'm Ishara, an artist and UX design student from GA.</p>
+    </div>
 
 </body>
 </html>
