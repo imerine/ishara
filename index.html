@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ishara Jasiri - Homepage</title>
+    <title>Ishara Merine - Homepage</title>
     <style>
         body {
             background-color: black;
@@ -16,6 +16,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
+			overflow: hidden;
         }
 
         .navbar h1 {
@@ -44,7 +45,50 @@
         .navbar a:hover {
             color: yellow;
         }
-		
+		.dropdown {
+			float: right;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn {
+		  font-size: 16px;  
+		  border: none;
+		  outline: none;
+		  color: white;
+		  padding: 14px 16px;
+		  background-color: inherit;
+		  font-family: inherit;
+		  margin: 0;
+		}
+
+		.navbar a:hover, .dropdown:hover .dropbtn {
+		  background-color: hotpink;
+		}
+
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: darkviolet;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		.dropdown-content a {
+		  float: none;
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		  text-align: left;
+		}
+
+		.dropdown-content a:hover {
+		  background-color: #ddd;
+		}
+
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		}
         .welcome-message {
             padding: 20px;
             text-align: left;
@@ -58,26 +102,78 @@
         }
 
         .welcome-message .intro {
-            font-size: 36px;
+            font-size: 48px;
             font-weight: bold;
             color: white;
             font-family: Verdana, sans-serif;
         }
+		.content-section {
+            background: linear-gradient(to bottom, darkviolet, purple);
+            text-align: left;
+            padding: 20px;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .content-section .question {
+            color: white;
+            font-weight: bold;
+            font-size: 45px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .content-section .answer {
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: bold;
+            font-size: 35px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .work-title {
+            text-align: center;
+			font-family: Verdana, sans-serif;
+        }
+		.work-title .little {
+			color: darkviolet;
+            font-size: 20px;
+			font-weight: bold;
+		}
+		.work-title .my-work {
+			color: white;
+			font-size: 48px;
+			font-weight: bold;
+		}
     </style>
 </head>
 <body>
     <div class="navbar">
-        <h1><em>Ishara Jasiri</em></h1>
+        <h1><em><a href="hello.html">Ishara Merine</a></em></h1>
         <ul>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#resume">Resume</a></li>
+			<div class="dropdown">
+				<button class="dropbtn">Work
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Research Projects</a>
+					<a href="#">Digital and Traditional Art</a>
+					<a href="#">Prototypes</a>
+				</div>
+			</div>
+            <li><a href="resume.html">Resume</a></li>
             <li><a href="#aboutme">About Me</a></li>
         </ul>
     </div>
 	<div class="welcome-message">
         <p class="greeting">Hi!</p>
-        <p class="intro">I'm Ishara, an artist and interactive design student with a minor focus in IT from GA.</p>
+        <p class="intro">I'm Ishara, an artist and interactive design student with a minor focus in IT.</p>
     </div>
-
+	<div class="content-section">
+        <p class="question">"Okay soooo what am I supposed to be doing here?"</p>
+        <p class="answer">Great question! I just wanted to show you some of my art. Think of this as a digital gallery of my sketchbook :)</p>
+    </div>
+	<div class="work-title">
+		<p class="little">So without further ado...</p>
+        <a href='work-page.html'><p class="my-work">My Work</p></a>
+    </div>
 </body>
 </html>
