@@ -91,21 +91,40 @@
 		.dropdown:hover .dropdown-content {
 		  display: block;
 		}
-		.content a {
-            display: inline-block;
-            background-color: deeppink;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 10px;
-            border-radius: 5px;
-            font-size: 18px;
-            font-weight: bold;
-            transition: background-color 0.3s;
+		.resume-link {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
         }
 
-        .content a:hover {
+        .resume-button {
+            background-color: deeppink;
+            color: white;
+            text-align: center;
+            width: 150px;
+            height: 50px;
+            border: 2px solid deepblue;
+            border-radius: 10px;
+            margin: 0 20px;
+            cursor: pointer;
+            transition: background-color 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .resume-button:hover {
             background-color: deepblue;
+        }
+
+        .resume-link a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .resume-link a:hover {
+            color: yellow;
         }
         .section {
             margin: 20px;
@@ -159,11 +178,10 @@
         </ul>
     </div>
 
-	<div class="content">
-        <a href="file:///C:/Users/ijmer/Downloads/Resume%20(1).pdf" target="_blank">Resume (pdf)</a>
-        <a href="C:\Users\ijmer\Downloads\Resume (3).docx" target="_blank">Resume (docx)</a>
-    </div>
-
+<div class="resume-link">
+    <div class="resume-button"><a href="file:///C:/Users/ijmer/Downloads/Resume%20(1).pdf" target="_blank">Resume (pdf)</a></div>
+    <div class="resume-button"><a href="C:\Users\ijmer\Downloads\Resume (3).docx" target="_blank">Resume (docx)</a></div>
+</div>
 <div class="section">
     <div class="section-title">Education</div>
     <div class="section-subtitle">Bachelor of Science | Kennesaw State University | 2022-Present</div>
