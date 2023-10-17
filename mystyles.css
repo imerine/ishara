@@ -44,12 +44,9 @@ body {
     overflow: hidden;
 }
 .dropdown .dropbtn { 
-  margin-right: 20px;
   height: 18.67px;
   padding-block: 0px;
   padding-inline: 0px;
-  margin-bottom: 0px;
-  margin-top: 0px;
   font-family: 'Andale Mono', monospace;
   font-weight: bold; 
   font-size: 105%;
