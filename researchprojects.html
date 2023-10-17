@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ishara Merine - Homepage</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background: linear-gradient(to left, deepskyblue, deeppink);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+			overflow: hidden;
+        }
+
+        .navbar h1 {
+            font-size: 36px;
+            color: plum;
+            font-family: 'Andale Mono', monospace;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: darkviolet;
+            font-family: 'Andale Mono', monospace;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: yellow;
+        }
+		.dropdown {
+			float: right;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn {
+		  font-size: 16px;  
+		  border: none;
+		  outline: none;
+		  color: darkviolet;
+	          font-family: 'Andale Mono', monospace;
+                  font-weight: bold;
+		  padding: 14px 16px;
+		  background-color: inherit;
+		  font-family: inherit;
+		  margin: 0;
+		}
+
+		.navbar a:hover, .dropdown:hover .dropbtn {
+		  background-color: hotpink;
+		}
+
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: darkviolet;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		.dropdown-content a {
+		  float: none;
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		  text-align: left;
+		}
+
+		.dropdown-content a:hover {
+		  background-color: #ddd;
+		}
+
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		}
+		.page-title .title {
+		color: white;
+		text-align: center;
+		font-family: 'Andale Mono', monospace;
+		font-size: 48px;
+		font-weight: bold;
+		margin-top: 20vh;\
+        }
+
+	</style>
+</head>
+<body>
+    <div class="navbar">
+        <h1><em><a href="index.html">Ishara Merine</a></em></h1>
+        <ul>
+			<div class="dropdown">
+				<button class="dropbtn">Work
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Research Projects</a>
+					<a href='workpage.html'>Digital and Traditional Art</a>
+					<a href="#">Prototypes</a>
+				</div>
+			</div>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+        </ul>
+    </div>
+	<div class="page-title">
+        <p class="title">Research Projects</p>
+    </div>
+</body>
+</html>
