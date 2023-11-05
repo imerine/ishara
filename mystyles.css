@@ -238,11 +238,15 @@ body {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
+    color: white;
+    font-family: 'Andale Mono', monospace;
 }
 .small-text {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
+    color: white;
+    font-family: 'Andale Mono', monospace;
 }
 .research-image-container {
     display: flex;
