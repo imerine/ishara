@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background: linear-gradient(to left, deepskyblue, deeppink);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .navbar {
+            background: linear-gradient(to left, deepskyblue, deeppink);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .navbar h1 {
+            font-size: 36px;
+            color: plum;
+            font-family: 'Andale Mono', monospace;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: darkviolet;
+            font-family: 'Andale Mono', monospace;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: yellow;
+        }
+
+        .dropdown {
+            float: right;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            height: 18.67px;
+            padding-block: 0px;
+            padding-inline: 0px;
+            font-family: 'Andale Mono', monospace;
+            font-weight: bold;
+            font-size: 105%;
+            border: none;
+            outline: none;
+            color: darkviolet;
+            background-color: inherit;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: hotpink;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: darkviolet;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            flex: 1;
+        }
+
+        .contact-box {
+            background-color: #272727;
+            width: 300px;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .form-label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #000;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1><em><a href="index.html">Ishara Merine</a></em></h1>
+        <ul>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Work
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href='researchprojects.html'>Research Projects</a>
+                        <a href='workpage.html'>Digital and Traditional Art</a>
+                        <a href="#">Prototypes</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-box">
+            <h2><div style="font-weight: bold; font-family: 'Andale Mono', monospace; color: white;">Contact Us!</div></h2>
+            <form>
+                <label class="form-label" for="name"><div style="font-weight: bold; font-family: 'Andale Mono', monospace; color: white;">Name</div></label>
+                <input class="form-input" type="text" id="name" placeholder="Enter name">
+
+                <label class="form-label" for="email"><div style="font-weight: bold; font-family: 'Andale Mono', monospace; color: white;">Email</div></label>
+                <input class="form-input" type="email" id="email" placeholder="Enter Email">
+
+                <label class="form-label" for="message"><div style="font-weight: bold; font-family: 'Andale Mono', monospace; color: white;">Message</div></label>
+                <textarea class="form-input" id="message" placeholder="What would you like to talk about?"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
