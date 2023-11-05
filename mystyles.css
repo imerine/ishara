@@ -233,3 +233,31 @@ body {
     font-size: 24px;
     color: white;
 }
+
+.header {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+.small-text {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.research-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.research-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+.left {
+    float: left;
+    clear: both;
+}
+.right {
+    float: right;
+}
