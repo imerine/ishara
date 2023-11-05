@@ -304,9 +304,11 @@ body {
 .text h1 {
     font-size: 36px;
     font-weight: bold;
+    font-family: 'Andale Mono', monospace;
     color: white;
 }
 .text p {
     font-size: 18px;
     color: white;
+    font-family: 'Andale Mono', monospace;
 }
