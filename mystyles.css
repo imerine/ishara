@@ -241,6 +241,14 @@ body {
     color: white;
     font-family: 'Andale Mono', monospace;
 }
+
+.medium-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-family: 'Andale Mono', monospace;
+}
 .small-text {
     font-size: 18px;
     font-weight: bold;
